@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TMAlianz - Customer Form</title>
+    <link rel="stylesheet" href="customers.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+<header>
+    <nav class="navbar">
+        <div class="navbar-logo">
+            <a href="index.html"><img src="TM_logo.png" alt="TMAlianz Logo"></a>
+            <a href="index.html" class="navbar-brand">TMAlianz</a>
+            
+            <!-- WhatsApp Icon -->
+            <a href="https://wa.me/+447306250394" target="_blank" class="whatsapp-icon">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+        </div>
+        <div class="hamburger" id="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <ul class="navbar-links" id="navbar-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="customers.html">Customers</a></li>
+            <li><a href="drivers.html">Drivers</a></li>
+            <li><a href="about us.html">About</a></li>
+            <li><a href="contact us.html">Contact</a></li>
+            <li><a href="FAQs.html">FAQ</a></li>
+        </ul>
+    </nav>
+</header>
+
+    <!-- Customer Form Section -->
+    <div class="form-container">
+        <h1>Customer Form</h1>
+        <form action="https://formspree.io/f/meoajrdr" method="POST">
+            
+            <!-- Name -->
+            <label for="name">1. Full Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <!-- Email -->
+            <label for="email">2. Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <!-- Phone Number -->
+            <label for="phone">3. Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <!-- Services -->
+            <label for="service">4. What service do you require?</label>
+            <select id="service" name="service" required>
+                <option value="">--Select Service--</option>
+                <option value="home_move">Home Move</option>
+                <option value="office_move">Office Move</option>
+                <option value="waste_clearance">Waste Clearance</option>
+                <option value="a_to_b">A to B</option>
+                <option value="single_item">Single Item</option>
+                <option value="airport_baggage_transfer">Airport Baggage Transfer</option>
+                <option value="biweekly_london_to_manchester">Bi-weekly Route London to Manchester</option>
+                <option value="biweekly_manchester_to_london">Bi-weekly Route Manchester to London</option>
+                <option value="motorcycle_recovery">Motorcycle Recovery</option>
+            </select>
+
+            <!-- More Details -->
+            <label for="details">5. Provide details of the items you want to move:</label>
+            <textarea id="details" name="details" rows="4" required></textarea>
+
+            <!-- Pickup Address -->
+            <label for="pickup">6. Pickup Address:</label>
+            <input type="text" id="pickup" name="pickup" placeholder="Enter pickup address" required>
+
+            <!-- Drop-off Address -->
+            <label for="dropoff">7. Drop-off Address:</label>
+            <input type="text" id="dropoff" name="dropoff" placeholder="Enter drop-off address" required>
+
+            <!-- Date -->
+            <label for="date">8. Preferred Date:</label>
+            <input type="date" id="date" name="date" required>
+
+            <!-- Time -->
+            <label for="time">9. Preferred Time:</label>
+            <input type="time" id="time" name="time" required>
+
+            <!-- Packing Service -->
+            <label for="packing">10. Do you require packing service?</label>
+            <select id="packing" name="packing" required>
+                <option value="no">No</option>
+                <option value="yes">Yes</option>
+            </select>
+
+            <!-- Additional Questions/Comments -->
+            <label for="comments">11. Additional Questions/Comments:</label>
+            <textarea id="comments" name="comments" rows="4"></textarea>
+
+            <button type="submit">Get Your Quote Now</button>
+        </form>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2025 TMAlianz. All Rights Reserved.</p>
+        <p><a href="termsandconditions.pdf" target="_blank" class="terms-link">Terms and Conditions</a></p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="customer.js"></script>
+</body>
+</html>
+
+
