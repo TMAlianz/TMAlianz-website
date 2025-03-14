@@ -1,0 +1,245 @@
+/* ✅ Reset Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ✅ General Body Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #fff; /* Ensures contrast on video */
+    background: none;
+    padding-top: 70px; /* Prevent overlap with navbar */
+}
+
+/* ✅ Fullscreen Background Video */
+.faq-video-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    z-index: -2; /* Keep behind the content */
+}
+
+.faq-video-container video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* ✅ Dark Overlay for Readability */
+.faq-video-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6); /* Darker overlay for better contrast */
+    z-index: -1;
+}
+
+/* ✅ Navigation Bar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(49, 55, 50, 0.9); /* Slight transparency */
+    padding: 15px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+/* ✅ Logo & TMAlianz Text */
+.navbar-logo {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-logo img {
+    width: 40px;
+    height: auto;
+    margin-right: 8px;
+}
+
+.navbar-logo a {
+    color: #fff;
+    font-size: 22px;
+    font-weight: 600;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+/* ✅ WhatsApp Icon */
+.navbar-logo .whatsapp-icon {
+    color: #25D366;
+    font-size: 24px;
+    margin-left: 10px;
+    transition: transform 0.3s ease;
+}
+
+.navbar-logo .whatsapp-icon:hover {
+    transform: scale(1.1);
+}
+
+/* ✅ Navbar Links */
+.navbar-links {
+    list-style: none;
+    display: flex;
+}
+
+.navbar-links li {
+    margin: 0 15px;
+}
+
+.navbar-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.navbar-links a:hover {
+    color: #f1c40f;
+}
+
+/* ✅ Hamburger Menu */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger .bar {
+    width: 30px;
+    height: 4px;
+    margin: 5px 0;
+    background-color: white;
+    transition: all 0.3s ease;
+}
+
+/* ✅ Mobile Navbar */
+@media screen and (max-width: 768px) {
+    .navbar-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        background-color: rgba(49, 55, 50, 0.9);
+        position: absolute;
+        top: 60px;
+        left: 0;
+        padding: 10px 0;
+    }
+
+    .navbar-links.show {
+        display: flex;
+    }
+
+    .navbar-links li {
+        margin: 15px 0;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+}
+
+/* ✅ FAQ Section */
+.faq-container {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    margin-top: 100px; /* Ensure spacing under navbar */
+    padding: 50px 20px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    background: rgba(0, 0, 0, 0.8); /* Darker box for full readability */
+    border-radius: 10px;
+    backdrop-filter: blur(5px);
+}
+
+/* ✅ FAQ Header */
+.faq-container h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #f1c40f;
+}
+
+/* ✅ Individual FAQ Items */
+.faq {
+    background-color: rgba(255, 255, 255, 0.15); /* Darker transparency */
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    text-align: left;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.faq:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+/* ✅ FAQ Titles */
+.faq h2 {
+    font-size: 22px;
+    color: #f1c40f; /* Yellow for better contrast */
+    margin-bottom: 10px;
+}
+
+/* ✅ FAQ Answers */
+.faq p {
+    font-size: 18px;
+    color: #ffffff; /* Fully visible white text */
+    display: block;
+}
+
+/* ✅ Footer */
+.footer {
+    background-color: #161917;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 14px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
+
+/* ✅ Footer Links */
+.footer .terms-link {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer .terms-link:hover {
+    text-decoration: underline;
+}
+
+/* ✅ Mobile Responsiveness */
+@media screen and (max-width: 768px) {
+    .faq-container {
+        width: 90%;
+        padding: 30px;
+    }
+
+    .faq h2 {
+        font-size: 20px;
+    }
+
+    .faq p {
+        font-size: 16px;
+    }
+}
+
+
+
+

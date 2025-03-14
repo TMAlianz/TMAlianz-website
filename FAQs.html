@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TMAlianz</title>
+    <link rel="stylesheet" href="FAQs.css">
+    <!-- Add Font Awesome CDN -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+<!-- ✅ Background Video -->
+<div class="faq-video-container">
+    <!-- London Rain 2 Video -->
+    <video autoplay muted loop class="background-video" poster="london rain ss.png">
+        <source src="https://www.dropbox.com/scl/fi/v7tekpa30bevhjp6tx87h/london-rain-2.mp4?rlkey=hno74pswley370dgg3grf31q4&raw=1" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    
+</div>
+
+<!-- ✅ Dark Overlay for Readability -->
+<div class="faq-video-overlay"></div>
+
+<!-- ✅ Navigation Bar -->
+<header>
+    <nav class="navbar">
+        <div class="navbar-logo">
+            <a href="Index.html"><img src="TM_logo.png" alt="TMAlianz Logo"></a>
+            <a href="Index.html" class="navbar-brand">TMAlianz</a>
+            
+            <!-- WhatsApp Icon -->
+            <a href="https://wa.me/+447306250394" target="_blank" class="whatsapp-icon">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+        </div>
+        <div class="hamburger" id="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <ul class="navbar-links" id="navbar-links">
+            <li><a href="Index.html">Home</a></li>
+            <li><a href="customers.html">Customers</a></li>
+            <li><a href="drivers.html">Drivers</a></li>
+            <li><a href="about us.html">About</a></li>
+            <li><a href="contact us.html">Contact</a></li>
+            <li><a href="FAQs.html">FAQ</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- ✅ FAQ Section -->
+<div class="faq-container">
+    <h1>Frequently Asked Questions (FAQs)</h1>
+
+    <div class="faq">
+        <h2>1. What services do you provide?</h2>
+        <p>We offer a wide range of services including:</p>
+        <ul>
+            <li>Man and Van Services</li>
+            <li>Home Removals</li>
+            <li>Office Relocations</li>
+            <li>Waste Clearance</li>
+            <li>Single Item Moves</li>
+            <li>London to Manchester Bi-weekly Routes</li>
+        </ul>
+    </div>
+
+    <div class="faq">
+        <h2>2. How do I book a service?</h2>
+        <p>Visit the <strong>Customer page</strong>, select the service you need, and submit your details. Our team will get in touch to confirm your booking.</p>
+    </div>
+
+    <div class="faq">
+        <h2>3. Do you offer same-day services?</h2>
+        <p>Yes, depending on availability. Contact us to check for urgent bookings.</p>
+    </div>
+
+    <div class="faq">
+        <h2>4. How do I get a quote?</h2>
+        <p>Submit your details through our booking form, and we’ll send you a personalized quote.</p>
+    </div>
+
+    <div class="faq">
+        <h2>5. What areas do you cover?</h2>
+        <p>We primarily serve London and the surrounding areas but can cover other UK locations upon request.</p>
+    </div>
+
+    <div class="faq">
+        <h2>6. What should I do if I need to cancel?</h2>
+        <p>Please notify us at least 24 hours before your scheduled service to avoid cancellation fees.</p>
+    </div>
+</div>
+
+<!-- ✅ Footer -->
+<footer class="footer">
+    <p>&copy; 2025 TMAlianz. All Rights Reserved.</p>
+    <p><a href="termsandconditions.pdf" target="_blank" class="terms-link">Terms and Conditions</a></p>
+</footer>
+
+<!-- ✅ JavaScript for Hamburger Menu -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    const hamburger = document.getElementById("hamburger");
+    const navLinks = document.getElementById("navbar-links");
+
+    hamburger.addEventListener("click", function () {
+        navLinks.classList.toggle("show");
+    });
+});
+</script>
+
+</body>
+</html>
+
+        

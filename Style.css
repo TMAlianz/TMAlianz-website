@@ -1,0 +1,336 @@
+/* Reset Default Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    background-color: #f8f8f8;
+    color: #333;
+    padding-top: 70px; /* Make space for fixed navbar */
+}
+
+/* Navigation Bar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #313732;
+    padding: 15px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    height: 60px;
+}
+
+/* TMAlianz Logo & Text */
+.navbar-logo {
+    display: flex;
+    align-items: center; /* ✅ Centers text vertically with the logo */
+    gap: 10px; /* ✅ Adds spacing between logo & text */
+}
+
+.navbar-logo img {
+    width: 40px;
+    height: auto;
+}
+
+.navbar-logo a {
+    color: #fff;
+    font-size: 22px;
+    font-weight: 600;
+    text-decoration: none;
+    display: flex;
+    align-items: center; /* ✅ Ensures alignment */
+}
+
+/* WhatsApp Icon */
+.navbar-logo .whatsapp-icon {
+    color: #25D366; /* WhatsApp Green */
+    font-size: 24px;
+    transition: transform 0.3s ease;
+}
+
+.navbar-logo .whatsapp-icon:hover {
+    transform: scale(1.1);
+}
+
+/* Navbar Links */
+.navbar-links {
+    list-style: none;
+    display: flex;
+}
+
+.navbar-links li {
+    margin: 0 15px;
+}
+
+.navbar-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.navbar-links a:hover {
+    color: #f1c40f;
+}
+
+/* Hamburger Menu */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger .bar {
+    width: 30px;
+    height: 4px;
+    margin: 5px 0;
+    background-color: white;
+    transition: all 0.3s ease;
+}
+
+/* Hamburger Active State */
+.hamburger.active .bar:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active .bar:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+}
+
+/* Mobile Navbar */
+@media screen and (max-width: 768px) {
+    .navbar-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        background-color: #313732;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        padding: 10px 0;
+    }
+
+    .navbar-links.show {
+        display: flex;
+    }
+
+    .navbar-links li {
+        margin: 15px 0;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+}
+
+/* Home Page */
+.home-section {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+/* Home Content */
+.home-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+}
+
+.home-content h1 {
+    font-size: 50px;
+}
+
+/* CTA Button */
+.cta-button {
+    display: inline-block;
+    background-color: #f39c12;
+    padding: 12px 25px;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    border-radius: 5px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.cta-button:hover {
+    background-color: #e67e22;
+}
+
+/* How to Book Section */
+.how-to-book {
+    padding: 40px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.steps {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.step {
+    background-color: #1a1d1b;
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    width: 22%;
+    text-align: center;
+}
+
+/* Responsive How to Book - Stack on Mobile */
+@media screen and (max-width: 768px) {
+    .steps {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .step {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+}
+
+/* ✅ Our Services Section */
+.services {
+    text-align: center;
+    padding: 40px;
+    background-color: #f4f4f4;
+}
+
+.services h2 {
+    margin-bottom: 20px;
+}
+
+/* ✅ Service Boxes */
+.services-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+/* ✅ Fix Large Images & Maintain Consistent Box Size */
+.service-box {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: calc(33.333% - 20px);
+    text-align: center;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+}
+
+.service-box img {
+    width: 100%;
+    height: 200px; /* Set a fixed height */
+    object-fit: cover; /* Ensure images are properly scaled */
+    border-radius: 10px;
+}
+
+.service-box h3 {
+    margin-top: 10px;
+}
+
+/* Service Dropdown */
+.service-details {
+    display: none;
+    margin-top: 10px;
+    font-size: 16px;
+    color: #555;
+}
+
+.service-box.active .service-details {
+    display: block;
+}
+
+/* Responsive Service Boxes - Stack on Mobile */
+@media screen and (max-width: 768px) {
+    .services-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service-box {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+/* ✅ CTA Button Container (Fixed Above Footer) */
+.cta-container {
+    text-align: center;
+    margin: 50px 0 80px; /* Space before footer */
+}
+
+.cta-container .cta-button {
+    display: inline-block;
+    background-color: #f39c12;
+    padding: 15px 30px;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.cta-container .cta-button:hover {
+    background-color: #e67e22;
+}
+
+/* Footer */
+.footer {
+    background-color: #161917;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 14px;
+    width: 100%;
+    bottom: 0;
+}
+
+.footer .terms-link {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footer .terms-link:hover {
+    text-decoration: underline;
+}
+
+
+
+

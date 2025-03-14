@@ -1,0 +1,247 @@
+/* Reset Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #fff; /* Ensures contrast on video */
+    padding-top: 70px; /* Prevent overlap with navbar */
+    background: none; /* No extra background */
+}
+
+/* ✅ Fullscreen Background Video */
+.home-section {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+/* ✅ Dark Overlay for Readability */
+.video-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+    z-index: -1;
+}
+
+/* ✅ Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(49, 55, 50, 0.9); /* Slight transparency */
+    padding: 15px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+/* ✅ Logo & TMAlianz Text */
+.navbar-logo {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-logo img {
+    width: 40px;
+    height: auto;
+    margin-right: 8px;
+}
+
+.navbar-logo a {
+    color: #fff;
+    font-size: 22px;
+    font-weight: 600;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+/* ✅ WhatsApp Icon */
+.navbar-logo .whatsapp-icon {
+    color: #25D366; /* WhatsApp Green */
+    font-size: 24px;
+    margin-left: 10px; /* Space between text and icon */
+    transition: transform 0.3s ease;
+}
+
+.navbar-logo .whatsapp-icon:hover {
+    transform: scale(1.1);
+}
+
+/* ✅ Navbar Links */
+.navbar-links {
+    list-style: none;
+    display: flex;
+}
+
+.navbar-links li {
+    margin: 0 15px;
+}
+
+.navbar-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.navbar-links a:hover {
+    color: #f1c40f;
+}
+
+/* ✅ Hamburger Menu */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger .bar {
+    width: 30px;
+    height: 4px;
+    margin: 5px 0;
+    background-color: white;
+    transition: all 0.3s ease;
+}
+
+/* ✅ Mobile Navbar */
+@media screen and (max-width: 768px) {
+    .navbar-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        background-color: rgba(49, 55, 50, 0.9);
+        position: absolute;
+        top: 60px;
+        left: 0;
+        padding: 10px 0;
+    }
+
+    .navbar-links.show {
+        display: flex;
+    }
+
+    .navbar-links li {
+        margin: 15px 0;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+}
+
+/* ✅ Smaller, Centered "Work in Progress" Box */
+.work-in-progress {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 80%; /* Reduced width */
+    max-width: 400px; /* Smaller box */
+    background: rgba(0, 0, 0, 0.7); /* Slight transparency */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(8px); /* Adds a slight blur effect */
+}
+
+/* ✅ Work in Progress Text */
+.work-in-progress h1 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #f1c40f;
+    margin-bottom: 10px;
+}
+
+.work-in-progress p {
+    font-size: 16px;
+    color: #ddd;
+    margin-top: 5px;
+}
+
+/* ✅ 🛠️ Fix Van Video (Smaller, Centered) */
+.van-animation {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.van-video {
+    width: 200px; /* Smaller video */
+    height: auto;
+    border-radius: 10px;
+}
+
+/* ✅ Footer */
+.footer {
+    background-color: #161917;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 14px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+.footer .terms-link {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer .terms-link:hover {
+    text-decoration: underline;
+}
+
+/* ✅ Responsive Layout */
+@media screen and (max-width: 768px) {
+    .work-in-progress {
+        width: 90%;
+        max-width: 320px; /* Smaller on mobile */
+    }
+
+    .work-in-progress h1 {
+        font-size: 20px;
+    }
+
+    .work-in-progress p {
+        font-size: 14px;
+    }
+
+    .van-video {
+        width: 150px; /* Even smaller on mobile */
+    }
+}
+
+
+
+
+
+
+
+

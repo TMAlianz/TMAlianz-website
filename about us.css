@@ -1,0 +1,236 @@
+/* Reset Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General Body Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    color: #fff;
+    background-image: url('Towerbridge.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+/* ✅ Navigation Bar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(49, 55, 50, 0.9);
+    padding: 15px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+/* ✅ Logo & TMAlianz Text */
+.navbar-logo {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-logo img {
+    width: 40px;
+    height: auto;
+    margin-right: 8px;
+}
+
+.navbar-logo a {
+    color: #fff;
+    font-size: 22px;
+    font-weight: 600;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+/* ✅ WhatsApp Icon (No Background) */
+.navbar-logo .whatsapp-icon {
+    color: #25D366; /* WhatsApp Green */
+    font-size: 24px;
+    margin-left: 10px;
+    transition: color 0.3s ease;
+}
+
+.navbar-logo .whatsapp-icon:hover {
+    color: #128c7e;
+}
+
+/* ✅ Navbar Links */
+.navbar-links {
+    list-style: none;
+    display: flex;
+}
+
+.navbar-links li {
+    margin: 0 15px;
+}
+
+.navbar-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.navbar-links a:hover {
+    color: #f1c40f;
+}
+
+/* ✅ Hamburger Menu (Fix for Mobile) */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger .bar {
+    width: 30px;
+    height: 4px;
+    margin: 5px 0;
+    background-color: white;
+    transition: all 0.3s ease;
+}
+
+/* ✅ Show Hamburger Menu on Mobile */
+@media screen and (max-width: 768px) {
+    .hamburger {
+        display: flex;
+    }
+
+    .navbar-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        background-color: rgba(49, 55, 50, 0.9);
+        position: absolute;
+        top: 60px;
+        left: 0;
+        padding: 10px 0;
+    }
+
+    .navbar-links.show {
+        display: flex;
+    }
+
+    .navbar-links li {
+        margin: 15px 0;
+    }
+}
+
+/* ✅ About Us Section */
+.aboutus-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+    margin-top: 100px;
+}
+
+/* Left Section */
+.aboutus-left {
+    width: 60%;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.aboutus-left h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #2c3e50;
+}
+
+.aboutus-left p {
+    font-size: 18px;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+/* Right Section */
+.aboutus-right {
+    width: 35%;
+    text-align: center;
+}
+
+.aboutus-right img {
+    width: 80%;
+    max-width: 400px;
+    border-radius: 10px;
+}
+
+/* ✅ WhatsApp Contact Box */
+.whatsapp-tag {
+    margin-top: 15px;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+/* ✅ WhatsApp Icon (No Background) */
+.whatsapp-tag .whatsapp-icon {
+    display: inline-block;
+    color: #25D366;
+    font-size: 30px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.whatsapp-tag .whatsapp-icon:hover {
+    color: #128c7e;
+}
+
+/* ✅ Footer */
+.footer {
+    background-color: #161917;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 14px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+.footer .terms-link {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footer .terms-link:hover {
+    text-decoration: underline;
+}
+
+/* ✅ Mobile Responsiveness */
+@media screen and (max-width: 768px) {
+    .aboutus-container {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .aboutus-left {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .aboutus-right {
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+
+
