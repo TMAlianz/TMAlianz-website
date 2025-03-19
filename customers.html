@@ -85,20 +85,30 @@
     // <event_parameters>
   });
 </script>
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDbpsJEYh1jmpwpDfJ7-5nUuHH-vBs_--I&libraries=places"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAasd0xoQ6z8Aj3duQj5D3Oiq1Ot1XzMqQ&libraries=places"></script>
 </head>
 <script>
   function initAutocomplete() {
-    let pickupInput = document.getElementById("pickup");
-    let dropoffInput = document.getElementById("dropoff");
+      var pickupInput = document.getElementById('pickup-location');
+      var dropoffInput = document.getElementById('dropoff-location');
 
-    let pickupAutocomplete = new google.maps.places.Autocomplete(pickupInput);
-    let dropoffAutocomplete = new google.maps.places.Autocomplete(dropoffInput);
+      if (pickupInput) {
+          new google.maps.places.Autocomplete(pickupInput);
+      }
+
+      if (dropoffInput) {
+          new google.maps.places.Autocomplete(dropoffInput);
+      }
   }
 
-  // Ensure the script runs when the page loads
-  google.maps.event.addDomListener(window, "load", initAutocomplete);
+  // Load Places API and initialize autocomplete
+  document.addEventListener("DOMContentLoaded", function() {
+      if (typeof google !== "undefined" && google.maps) {
+          initAutocomplete();
+      }
+  });
 </script>
+
 <body>
 
     <!-- Navigation Bar -->
