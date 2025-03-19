@@ -9,7 +9,6 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDbpsJEYh1jmpwpDfJ7-5nUuHH-vBs_--I&libraries=places"></script>
     <!-- Open Graph Meta Tags -->
 <title>Book a Man and Van in London | TMAlianz</title>
 <meta name="description" content="Book a trusted Man and Van service in London. TMAlianz offers fast and affordable home removals, office moves, and waste disposal. Get a quote now!">
@@ -86,6 +85,7 @@
     // <event_parameters>
   });
 </script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDbpsJEYh1jmpwpDfJ7-5nUuHH-vBs_--I&libraries=places"></script>
 </head>
 
 <body>
@@ -155,12 +155,12 @@
             <textarea id="details" name="details" rows="4" required></textarea>
 
             <!-- Pickup Address -->
-            <label for="pickup">6. Pickup Address:</label>
-            <input type="text" id="pickup" name="pickup" placeholder="Enter pickup address" required>
+            <label for="pickup">Pickup Location:</label>
+<input id="pickup" type="text" placeholder="Enter pickup location" />
 
             <!-- Drop-off Address -->
-            <label for="dropoff">7. Drop-off Address:</label>
-            <input type="text" id="dropoff" name="dropoff" placeholder="Enter drop-off address" required>
+            <label for="dropoff">Drop-off Location:</label>
+<input id="dropoff" type="text" placeholder="Enter drop-off location" />
 
             <!-- Date -->
             <label for="date">8. Preferred Date:</label>
