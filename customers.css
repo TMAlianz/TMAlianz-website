@@ -190,7 +190,7 @@ button:hover {
     text-align: center;
     padding: 15px;
     font-size: 14px;
-    position: fixed;
+    position: relative;
     width: 100%;
     bottom: 0;
 }
@@ -198,11 +198,17 @@ button:hover {
 .footer .terms-link {
     color: #fff;
     text-decoration: none;
-}
-
-.footer .terms-link:hover {
+    font-size: 14px;
+  }
+  
+  .footer .terms-link:hover {
     text-decoration: underline;
-}
+  }
+  
+  .footer .separator {
+    color: #fff;
+    font-size: 14px;
+  }
 
 /* Responsive Form */
 @media screen and (max-width: 768px) {
