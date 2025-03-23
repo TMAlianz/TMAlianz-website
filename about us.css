@@ -205,10 +205,6 @@ body {
     font-size: 14px;
   }
 
-.footer .terms-link:hover {
-    text-decoration: underline;
-}
-
 /* ✅ Mobile Responsiveness */
 @media screen and (max-width: 768px) {
     .aboutus-container {
