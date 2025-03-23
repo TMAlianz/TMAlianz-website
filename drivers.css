@@ -212,11 +212,17 @@ body {
 .footer .terms-link {
     color: #fff;
     text-decoration: none;
-}
-
-.footer .terms-link:hover {
+    font-size: 14px;
+  }
+  
+  .footer .terms-link:hover {
     text-decoration: underline;
-}
+  }
+  
+  .footer .separator {
+    color: #fff;
+    font-size: 14px;
+  }
 
 /* ✅ Responsive Layout */
 @media screen and (max-width: 768px) {
