@@ -167,24 +167,14 @@ body {
 }
 
 /* ✅ WhatsApp Contact Box */
-.whatsapp-tag {
-    margin-top: 15px;
-    color: white;
-    padding: 10px;
-    border-radius: 5px;
-    text-align: center;
-}
-
-/* ✅ WhatsApp Icon (No Background) */
-.whatsapp-tag .whatsapp-icon {
-    display: inline-block;
+.whatsapp-link {
     color: #25D366;
-    font-size: 30px;
+    font-size: 32px;
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
-.whatsapp-tag .whatsapp-icon:hover {
+.whatsapp-link:hover {
     color: #128c7e;
 }
 
