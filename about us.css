@@ -204,7 +204,16 @@ body {
     color: #fff;
     text-decoration: none;
     font-size: 14px;
-}
+  }
+  
+  .footer .terms-link:hover {
+    text-decoration: underline;
+  }
+  
+  .footer .separator {
+    color: #fff;
+    font-size: 14px;
+  }
 
 .footer .terms-link:hover {
     text-decoration: underline;
