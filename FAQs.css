@@ -210,19 +210,33 @@ body {
     padding: 15px;
     font-size: 14px;
     width: 100%;
-    position: fixed;
+    position: relative;
     bottom: 0;
 }
 
 /* ✅ Footer Links */
-.footer .terms-link {
+.footer .footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 10px;
+  }
+  
+  .footer .terms-link {
     color: #fff;
     text-decoration: none;
-}
-
-.footer .terms-link:hover {
+    font-size: 14px;
+  }
+  
+  .footer .terms-link:hover {
     text-decoration: underline;
-}
+  }
+  
+  .footer .separator {
+    color: #fff;
+    font-size: 14px;
+  }
 
 /* ✅ Mobile Responsiveness */
 @media screen and (max-width: 768px) {
