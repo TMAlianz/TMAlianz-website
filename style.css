@@ -330,6 +330,28 @@ body {
 .footer .terms-link:hover {
     text-decoration: underline;
 }
+.footer .footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.footer .terms-link {
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.footer .terms-link:hover {
+  text-decoration: underline;
+}
+
+.footer .separator {
+  color: #fff;
+  font-size: 14px;
+}
 
 
 
