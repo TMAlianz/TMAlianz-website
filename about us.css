@@ -185,25 +185,27 @@ body {
     text-align: center;
     padding: 15px;
     font-size: 14px;
-    position: relative;
+    position: fixed;
     width: 100%;
     bottom: 0;
+    left: 0; /* Ensure it’s anchored to the left */
+    z-index: 1000;
 }
 
 .footer .terms-link {
     color: #fff;
     text-decoration: none;
     font-size: 14px;
-  }
-  
-  .footer .terms-link:hover {
+}
+
+.footer .terms-link:hover {
     text-decoration: underline;
-  }
-  
-  .footer .separator {
+}
+
+.footer .separator {
     color: #fff;
     font-size: 14px;
-  }
+}
 
 /* ✅ Mobile Responsiveness */
 @media screen and (max-width: 768px) {
