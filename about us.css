@@ -185,7 +185,7 @@ body {
     text-align: center;
     padding: 15px;
     font-size: 14px;
-    position: fixed;
+    position: relative;
     width: 100%;
     bottom: 0;
     left: 0; /* Ensure it’s anchored to the left */
